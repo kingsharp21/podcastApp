@@ -3,9 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+
+
 import Welcome from './src/screens/onboardingScreens/welcomeScreen/Welcome';
 import Intro from './src/screens/onboardingScreens/introScreen/Intro'
-
 
 
 const Stack = createNativeStackNavigator();
@@ -13,16 +14,18 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
+      >
         <Stack.Screen
           name="Welcome"
           component={Welcome}
           // options={{title: 'Welcome'}}
         />
-        <Stack.Screen name="Intro" component={Intro} />
+        {/* <Stack.Screen name="Intro" component={Intro} /> */}
       </Stack.Navigator>
-      {/* <Welcome/>
-      <Intro/> */}
     </NavigationContainer>
    
   );
@@ -31,7 +34,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
   },
