@@ -77,10 +77,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
     padding: 7,
-    marginTop: 30,
+    marginTop: 10,
+    marginBottom: 20,
     letterSpacing: 1,
-    fontFamily: "semiBold"
-    //    backgroundColor:'red',
+    fontFamily: "semiBold",
+    // backgroundColor:'red',
   },
   topBgImg: {
     height: 500,

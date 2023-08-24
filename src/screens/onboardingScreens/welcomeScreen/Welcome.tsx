@@ -30,11 +30,11 @@ function Welcome( {navigation, visible} ) {
             </View>
      
             <View style={[styles.horizontal, styles.loader]}>
-                <LottieView  style={{
+                {/* <LottieView  style={{
                   width: 180,
                   height: 180,
               }} source={require('../../../../assets/loading.json')}  autoPlay
-              loop/>
+              loop/> */}
             </View>
         </View>
         

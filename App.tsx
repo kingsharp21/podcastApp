@@ -52,7 +52,8 @@ export default function App() {
         <Stack.Screen
           name="Welcome"
           // component={Welcome}
-          component={SigIn}
+          // component={SigIn}
+          component={Intro}
           // options={{title: 'Welcome'}}
         />
         <Stack.Screen name="Intro" component={Intro} />
